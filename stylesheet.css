@@ -1,0 +1,269 @@
+/* 全体のスタイル設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* 全体レイアウト */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* サイドバーのスタイル */
+.sidebar {
+    width: 220px;
+    background-color: #2c2c2c;
+    color: #f0f0f0;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 1em;
+}
+
+.sidebar ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #a0a0a0;
+}
+
+/* メインコンテンツのスタイル */
+.content {
+    flex: 1;
+    padding: 40px;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 2.0;
+    /* margin-bottom: 30px; */
+}
+
+/* NewsセクションとInterestsセクションのスタイル */
+.news-section, .interests-section {
+    margin-top: 30px;
+}
+
+/* NewsとInterests間の余白を調整 */
+.interests-section {
+    margin-top: 50px;  /* 上部の余白を増加 */
+}
+
+/* NewsセクションとInterestsセクションのスタイル */
+.news-section, .interests-section {
+    margin-top: 30px;
+}
+
+/* NewsとInterestsの間の余白を調整 */
+.interests-section {
+    margin-top: 50px;  /* 上部の余白を増加 */
+}
+
+/* Newsリスト項目のインデント */
+.news-list li {
+    padding-left: 20px;       /* 左側にインデントを追加 */
+    border-left: 3px solid #cccccc; /* 左にラインを追加してインデントを強調（任意） */
+    margin-bottom: 8px;       /* 各ニュース項目間に余白を追加 */
+    line-height: 1.6;         /* 行間を調整して読みやすく */
+}
+
+/* Interestsセクションのサブセクションスタイル */
+.interest-subsection {
+    margin-top: 20px;
+    padding-left: 20px;       /* 左側にインデントを追加 */
+    border-left: 3px solid #cccccc; /* 左にラインを追加してインデントを強調（任意） */
+}
+
+.interest-subsection h3 {
+    font-size: 1.3em;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.interest-subsection p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555555;
+}
+
+
+/* プロフィールセクションのスタイル */
+.profile {
+    width: 250px;
+    background-color: #f8f8f8;
+    color: #333333;
+    padding: 20px;
+    text-align: center;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    /* border-radius: 50%; */
+    margin-bottom: 20px;
+}
+
+.profile h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    font-size: 1em;
+    color: #666666;
+}
+
+/* CVセクションのスタイル */
+.cv-section {
+    margin-bottom: 30px;
+}
+
+.cv-section h2 {
+    font-size: 1.6em;
+    border-bottom: 2px solid #2c2c2c;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.cv-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cv-section li {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+/* Publicationセクションのスタイル */
+.pub-section {
+    margin-bottom: 30px;
+}
+
+.pub-section h2 {
+    font-size: 1.6em;
+    border-bottom: 2px solid #2c2c2c;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.pub-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.pub-section li {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+
+
+/* ギャラリー全体のスタイル */
+.gallery {
+    margin-top: 30px;
+}
+
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;  /* 行を超えた場合に折り返し */
+    list-style: none;
+    padding-left: 0;
+    gap: 15px;  /* 各写真間のスペース */
+}
+
+.gallery-list li {
+    flex: 1 1 calc(33.333% - 15px);  /* 横に3列並べる */
+    max-width: calc(33.333% - 15px); /* 各写真の最大幅 */
+}
+
+.gallery-list li figure {
+    margin: 0;
+    padding: 0;
+    text-align: center; /* 画像とキャプションを中央揃え */
+}
+
+.gallery-list li img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-list li img:hover {
+    transform: scale(1.05);
+}
+
+/* キャプションのスタイル */
+.gallery-list li figcaption {
+    margin-top: 8px;          /* 画像とキャプションの間に余白 */
+    font-size: 1em;
+    color: #555555;
+    text-align: center; /* キャプションを中央揃え */
+}
+
+
+
+
+/* 自由研究ページのスタイル */
+.content {
+    background-color: #f9f5ff; /* 明るい背景色 */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #ff6347; /* 明るくポップなタイトルカラー */
+}
+
+/* ギャラリーリストのスタイル */
+.research-list li {
+    flex: 1 1 calc(33.333% - 15px); /* 各画像を3列にして小さく表示 */
+    max-width: calc(33.333% - 15px); /* 各画像の最大幅を調整 */
+    text-align: center;
+    background-color: #ffebcd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.research-list li:hover {
+    transform: scale(1.05);
+}
+
+.research-list li figure {
+    margin: 0;
+    padding: 10px;
+}
+
+.research-list li img {
+    width: 80%; /* 画像サイズを縮小 */
+    height: auto;
+    border-radius: 8px;
+}
+
+.research-list li figcaption {
+    margin-top: 8px;
+    font-size: 1em;
+    color: #333333;
+    font-weight: bold;
+}
