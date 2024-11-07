@@ -234,20 +234,31 @@ h1 {
     font-size: 2em;
     color: #ff6347; /* 明るくポップなタイトルカラー */
 }
+/* ギャラリー全体のスタイル */
+.research-gallery {
+    margin-top: 20px;
+}
 
-/* ギャラリーリストのスタイル */
+.research-list {
+    display: flex;
+    flex-wrap: wrap;  /* 複数行に対応して折り返し */
+    list-style: none;
+    padding-left: 0;
+    gap: 15px; /* 各写真間のスペース */
+}
+
 .research-list li {
-    flex: 1 1 calc(33.333% - 15px); /* 各画像を3列にして小さく表示 */
-    max-width: calc(33.333% - 15px); /* 各画像の最大幅を調整 */
+    flex: 1 1 calc(25% - 15px);  /* 各画像を4列表示 */
+    max-width: calc(25% - 15px);
     text-align: center;
-    background-color: #ffebcd;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffebcd;  /* 明るい背景色 */
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 影で浮き上がる効果 */
     transition: transform 0.2s ease;
 }
 
 .research-list li:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* ホバー時に拡大 */
 }
 
 .research-list li figure {
@@ -256,14 +267,16 @@ h1 {
 }
 
 .research-list li img {
-    width: 80%; /* 画像サイズを縮小 */
+    width: 100%; /* コンテナ幅に収まるよう調整 */
     height: auto;
     border-radius: 8px;
 }
 
 .research-list li figcaption {
     margin-top: 8px;
-    font-size: 1em;
+    font-size: 0.8em;
     color: #333333;
     font-weight: bold;
+    text-align: center;
 }
+
