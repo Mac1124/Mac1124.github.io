@@ -202,8 +202,8 @@
 }
 
 .gallery-list li img {
-    width: 100%;
-    height: auto;
+    width: 320px;
+    height: 200px;
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
