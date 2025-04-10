@@ -1,4 +1,34 @@
 /* 全体のスタイル設定 */
+
+/* 基本スタイル（PC向け） */
+body {
+    font-size: 18px;
+}
+  
+/* スマートフォン向けスタイル（画面幅600px以下） */
+@media screen and (max-width: 600px) {
+    body {
+      font-size: 16px;
+    }
+    .container {
+      width: 95%;
+      margin: auto;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+  
+table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
+  
+
 * {
     margin: 0;
     padding: 0;
@@ -202,8 +232,8 @@
 }
 
 .gallery-list li img {
-    width: 320px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
@@ -279,4 +309,3 @@ h1 {
     font-weight: bold;
     text-align: center;
 }
-
